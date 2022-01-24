@@ -1,15 +1,7 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import Carousel from '../components/Carousel/Carousel';
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
+  <Carousel items={["images/j2.jpg", "images/j4.jpg", "images/r1.jpg"]} />
 )
 
 export default IndexPage

@@ -1,0 +1,100 @@
+@import "./carousel.css";
+
+.layout {
+  height: 100vh;
+  background: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.carousel-item {
+  width: 100%;
+  display: inline-flex;
+  background-color: #21ce99;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 15px;
+  cursor: pointer
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.carousel-arrows {
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  top: 40%;
+  position: absolute;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  z-index: 1000;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  transition: background-color 1s ease-in-out;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.white50 {
+  background-color: #ffffff80;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.label {
+  color: #21ce99;
+  margin-right: 1rem;
+}
+
+.number,
+.separator {
+  color: #333;
+}
